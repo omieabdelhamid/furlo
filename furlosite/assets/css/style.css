@@ -218,6 +218,7 @@ a:active {
     }
 
 .buttony1{
+    float: right;
     background-color: pink;
     color:black;
    font-size: 16px;

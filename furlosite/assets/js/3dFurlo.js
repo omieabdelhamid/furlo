@@ -8,7 +8,6 @@ function draw() {
 
     background(0);
     normalMaterial();
-
     rectMode(CENTER);
     noStroke();
     translate(mouseX - width/2, mouseY - height/2);
