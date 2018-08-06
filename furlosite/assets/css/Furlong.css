@@ -11,11 +11,7 @@ h1 {
     color: hotpink;
     margin-left: 2%;
     text-decoration: none;
-    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadein 10s; /* Firefox < 16 */
-            -ms-animation: fadein 10s; /* Internet Explorer */
-             -o-animation: fadein 10s; /* Opera < 12.1 */
-                animation: fadein 10s;
+
     }
     
     @keyframes fadein {
@@ -65,11 +61,6 @@ a:active {
     font-family: 'Monoton', cursive;
     color: pink; 
     text-decoration: none; 
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadein 10s; /* Firefox < 16 */
-            -ms-animation: fadein 10s; /* Internet Explorer */
-             -o-animation: fadein 10s; /* Opera < 12.1 */
-                animation: fadein 10s;
     }
     
     @keyframes fadein {

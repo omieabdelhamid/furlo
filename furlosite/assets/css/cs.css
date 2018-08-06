@@ -1,0 +1,49 @@
+.landing{
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* margin-top: 50%; */
+   animation-delay: 20s;
+   -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 10s; /* Firefox < 16 */
+    -ms-animation: fadein 10s; /* Internet Explorer */
+     -o-animation: fadein 10s; /* Opera < 12.1 */
+        animation: fadein 10s;
+        background-color: black;
+}
+.mdl-layout-title2{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+
+
+#entery{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+ }
+
+a:link {
+    color: pink; 
+        text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    background-color: transparent;
+    text-decoration: greenyellow;
+}
+
+a:active {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}

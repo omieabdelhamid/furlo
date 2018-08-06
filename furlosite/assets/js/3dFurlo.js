@@ -1,7 +1,8 @@
 let clicked = false;
 
 function setup() {
-    createCanvas(windowWidth, 1000, WEBGL);
+    var canvas = createCanvas(windowWidth, 1000, WEBGL);
+    canvas.parent('sketch-holder');
 }
 let angle = 10
 function draw() {

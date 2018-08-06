@@ -6,11 +6,12 @@
     flex-direction: row; 
     align-items: center;
     justify-content: space-evenly;  
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-     -ms-animation: fadein 10s; /* Internet Explorer */
-      -o-animation: fadein 10s; /* Opera < 12.1 */
-         animation: fadein 10s;
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
     
 }
 
@@ -18,11 +19,12 @@ h1 {
     font-family: 'Monoton', cursive;
     font-size: 20px;
     color: pink;
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-     -ms-animation: fadein 10s; /* Internet Explorer */
-      -o-animation: fadein 10s; /* Opera < 12.1 */
-         animation: fadein 10s;
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
 }
 
 /* links default style*/
@@ -32,11 +34,12 @@ h1 {
     color: hotpink;
     margin-left: 2%;
     text-decoration: none;
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-     -ms-animation: fadein 10s; /* Internet Explorer */
-      -o-animation: fadein 10s; /* Opera < 12.1 */
-         animation: fadein 10s;
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
 }
 
 a:visited {
@@ -51,6 +54,14 @@ a:active {
     text-decoration: underline;
 }
 
+.sketchy{
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+}
 
 /* Landing Page */
 
@@ -68,6 +79,7 @@ a:active {
     justify-content: center;
     align-items: center;
    /* margin-top: 50%; */
+   animation-delay: 20s;
    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 10s; /* Firefox < 16 */
     -ms-animation: fadein 10s; /* Internet Explorer */
@@ -110,17 +122,19 @@ to   { opacity: 1; }
    font-size: 20px;
 }
 
+
 /* Home Page Header */
 .mdl-layout-title {
     font-size: 36px;
     font-family: 'Monoton', cursive;
     color: pink; 
     text-decoration: none; 
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-     -ms-animation: fadein 10s; /* Internet Explorer */
-      -o-animation: fadein 10s; /* Opera < 12.1 */
-         animation: fadein 10s;
+    animation-delay: 20s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
 } 
 
 p2 {
@@ -165,11 +179,7 @@ a:active {
     justify-content: flex-start;
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
-    -webkit-animation: fadein 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 10s; /* Firefox < 16 */
-     -ms-animation: fadein 10s; /* Internet Explorer */
-      -o-animation: fadein 10s; /* Opera < 12.1 */
-         animation: fadein 10s;
+
 }
 .uploady{
     color: white;
