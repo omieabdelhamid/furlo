@@ -40,3 +40,4 @@ function addMessageToBoard(rowDataRef){
     paragraph.innerText = name +": "+ message;
     allMessages.appendChild(paragraph);
 }
+console.log(database);
