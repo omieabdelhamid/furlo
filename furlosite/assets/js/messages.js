@@ -1,6 +1,7 @@
 const usernameElement = document.getElementById("username");
 const messageElement = document.getElementById("message");
 const button = document.getElementById("submitButton");
+const allMessages = document.getElementById("allMessages");
 button.addEventListener("click",updateDB);
 
 //Set database object here
@@ -30,6 +31,12 @@ database.push(rawData);
 // Set database "child_added" event listener here
 database.on("child_added",addMessageToBoard);
 
-function addMessageToBoard(rowData){
-    
+function addMessageToBoard(rowDataRef){
+    const row = rowDataRef.val()
+    console.log(row);
+    const name = row.NAME;
+    const message = row.MESSAGE;
+    const paragraph = document.createElement("p");
+    paragraph.innerText = name +": "+ message;
+    allMessages.appendChild(paragraph);
 }
