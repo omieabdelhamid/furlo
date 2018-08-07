@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>fireMessage</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBb8yTd1D_uwsK0nCIca52jKvD5o4ZklwU",
+        authDomain: "furlochat-71f0e.firebaseapp.com",
+        databaseURL: "https://furlochat-71f0e.firebaseio.com",
+        projectId: "furlochat-71f0e",
+        storageBucket: "furlochat-71f0e.appspot.com",
+        messagingSenderId: "494289843475"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+    <!--custom files-->
+    <script src="../assets/js/messages.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/messages.css">
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>furlo talk</h1>
+
+    <!--This div will be populated with messages-->
+    <div class="allMessages">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">tu nombre:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">speak:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+
+    </div>
+  <center>  <a href="home.html" id="returnhome" >return home</a> </center>
+
+</body>
+</html>

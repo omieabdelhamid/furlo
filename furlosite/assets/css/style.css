@@ -170,15 +170,26 @@ a:active {
 }
 
 /* Body Text */
-
-.textmid{
+.textmid2{
     color: white;
     display: flex;
     padding: 80px;
     flex-direction: row;
     justify-content: flex-start;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
+
+}
+.textmid{
+    color: white;
+    display: flex;
+    padding-top: 50px;
+    padding-left:30px;
+    padding-bottom: -10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
 
 }
 .uploady{
@@ -186,25 +197,7 @@ a:active {
     font-size: 30px;
 }
 
-.Say {
-    display: flex; 
-    height: 0; 
-    margin-top: 0;
-    
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 40px;
-    padding:-15px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    color: white;
-    font-size: 100px;
-    padding:50px;
-    border-style: groove;
-    border-color: coral;
-    border-width: 15px;
-}
+
 
 .textBox {
     display: flex; 
@@ -242,4 +235,8 @@ a:active {
     color: white;
     box-shadow: 0 12px 16px 0 white(0,0,0,0.24), 0 17px 50px 0 whitesmoke
 ;
+}
+
+#apiStuff{
+    color:white;
 }
