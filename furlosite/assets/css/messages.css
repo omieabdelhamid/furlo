@@ -19,6 +19,34 @@ h1,
 p {
     margin: 0;
 }
+.mdl-navigation__link1, .mdl-navigation__link2, .mdl-navigation__link3, .mdl-navigation__link4{
+    font-size: 23px;
+    font-family: 'Monoton', cursive;
+    color: hotpink;
+    margin-left: 2%;
+    text-decoration: none;
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+}
+
+
+
+.mdl-layout-title {
+    font-size: 36px;
+    font-family: 'Monoton', cursive;
+    color: pink; 
+    text-decoration: none; 
+    animation-delay: 20s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+} 
 
 body {
     display: flex;
@@ -45,7 +73,7 @@ label,
 }
 
 input,
-.allMessages>p {
+.allMessages {
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -53,6 +81,14 @@ h1 {
     font-size: 45px;
     color: var(--accent);
     text-align: center;
+}
+.requestDiv {
+    margin: 20px 0 40px 0;
+    display: flex;
+    padding: 15px;
+    border: 2px solid var(--accent);
+    color: white;
+    background-color: black;
 }
 
 .allMessages {
@@ -82,6 +118,7 @@ h1 {
     border: 2px solid var(--accent);
     background-color: var(--primaryLight);
 }
+
 
 label {
     font-size: 1.3em;
@@ -124,12 +161,52 @@ form {
     grid-template: auto/auto 1fr;
 }
 
-#submitButton {
+.submitButton {
     color: var(--primaryDark);
     background-color: var(--accent);
     font-size: 1.3em;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
+    padding: 7px;
+}
+
+.submitButton3 {
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 1.0em;
+    font-family:'Ubuntu', sans-serif;
+    font-style: bold; 
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+    padding: 7px;
+}
+
+#submitButton1{
+    font-family:'Ubuntu', sans-serif;
+    font-style: bold;
+}
+
+#submitButton1:hover {
+    background-color: var(--primaryDark);
+    color: var(--accent);
+}
+
+#submitButton1:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
+}
+
+
+#submitButton3:hover {
+    background-color: var(--primaryDark);
+    color: var(--accent);
+}
+
+#submitButton3:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
 }
 
 #submitButton:hover {

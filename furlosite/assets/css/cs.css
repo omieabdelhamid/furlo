@@ -19,6 +19,34 @@
     font-size: 50px;
 }
 
+.mdl-navigation__link1, .mdl-navigation__link2, .mdl-navigation__link3, .mdl-navigation__link4{
+    font-size: 23px;
+    font-family: 'Monoton', cursive;
+    color: hotpink;
+    margin-left: 2%;
+    text-decoration: none;
+    animation-delay: 25s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+}
+
+
+
+.mdl-layout-title {
+    font-size: 36px;
+    font-family: 'Monoton', cursive;
+    color: pink; 
+    text-decoration: none; 
+    animation-delay: 20s;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+} 
 
 #entery{
     font-family: 'Ubuntu', sans-serif;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="shortcut icon" href="../assets/images/favico.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Donate - Furlo</title>
+
+
+
+    <!--custom files-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCiWNGHeNSX6FScrN4vUJTs7BgfvdwFINI",
+    authDomain: "furlo-donate.firebaseapp.com",
+    databaseURL: "https://furlo-donate.firebaseio.com",
+    projectId: "furlo-donate",
+    storageBucket: "furlo-donate.appspot.com",
+    messagingSenderId: "598881077012"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="../assets/js/donate.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/messages.css">
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>FURLO &nbsp; DONATE</h1>
+
+    <!--This div will be populated with messages-->
+    <div style="display:none;" class="allRequests" id="allRequests">
+        
+    </div>
+    <!--For user to input messages-->
+    <br> 
+    <button class="submitButton" id="submitButton">Make a Request</button> 
+    <br> 
+    <button class="submitButton3" id="submitButton3">Show Requests</button>
+    <div style="display:none;" id="userContainer" class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Name:</label>
+                    <input id="username" placeholder="Furlong Fiorlo" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="furlong@firolo.com" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="request">Request:</label>
+                    <input id="request" placeholder="Pink and Black Shirt, Size Small" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="comment">Comment:</label>
+                    <input id="comment" placeholder="Need Clout" type="text">
+                </div>
+            </div>
+            <button class="submitButton" id="submitButton1">Submit</button>
+        </form>
+
+    </div>
+    <br>
+    <br>
+      <center>  <a href="store.html" id="returnhome" >keep shopping</a> </center>
+
+  <center>  <a href="home.html" id="returnhome" >return home</a> </center>
+  <br>
+  <br>
+  <body style = " background: linear-gradient(black, rgb(102, 64, 70));">
+
+
+</body>
+</html>
