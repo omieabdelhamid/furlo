@@ -87,7 +87,7 @@ function addRequestToBoard(rowDataRef){
     const div = document.createElement("div");
     div.className= "requestDiv"
     const paragraph = document.createElement("p");
-    paragraph.innerHTML = "Name: &nbsp;" + name  + "<br>" + "<br>" + request + "<br>" + "Email: &nbsp" + email + "<br>" + comment ;
+    paragraph.innerHTML = "Name: &nbsp;" + name  + "<br>" + "<br>" + request + " needed" + "<br>" + "Email: &nbsp" + email + "<br>" + comment ;
     div.appendChild(paragraph);
     allRequests.appendChild(div);
     
