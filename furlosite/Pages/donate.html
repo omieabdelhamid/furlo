@@ -38,10 +38,22 @@
         
     </div>
     <!--For user to input messages-->
-    <br> 
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+
     <button class="submitButton" id="submitButton">Make a Request</button> 
     <br> 
-    <button class="submitButton3" id="submitButton3">Show Requests</button>
+    <button class="submitButton3" id="submitButton3"> <b>Show Requests</b></button>
+
+
     <div style="display:none;" id="userContainer" class="userContainer">
         <form>
             <div class="inputContainer">
@@ -53,13 +65,24 @@
                     <label for="email">Email:</label>
                     <input id="email" placeholder="furlong@firolo.com" type="text">
                 </div>
-                <div class="singleInput">
+                <div class="dropInput">
                     <label for="request">Request:</label>
-                    <input id="request" placeholder="Pink and Black Shirt, Size Small" type="text">
+                    <select id="request" name="clothingTypes">
+                        <option value="sstshirt">T-Shirt</option>
+                        <option value="sstshirt">Dress Shirt</option>
+                        <option value="sweater">Sweater</option>
+                        <option value="hoodie">Hoodie</option>
+                        <option value="jeans">Jeans</option>
+                        <option value="shorts">Shorts</option>
+                        <option value="dressPants">Dress Pants</option>
+                        <option value="sstshirt">Sweatpants</option>
+                        <option value="blazer">Blazer</option>
+                        <option value="sstshirt">Jacket</option>
+                      </select>
                 </div>
                 <div class="singleInput">
                     <label for="comment">Comment:</label>
-                    <input id="comment" placeholder="Need Clout" type="text">
+                    <input id="comment" placeholder="Size: Men's Medium; Color:Red; Need for Clout" type="text">
                 </div>
             </div>
             <button class="submitButton" id="submitButton1">Submit</button>
@@ -68,6 +91,14 @@
     </div>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
       <center>  <a href="store.html" id="returnhome" >keep shopping</a> </center>
 
   <center>  <a href="home.html" id="returnhome" >return home</a> </center>

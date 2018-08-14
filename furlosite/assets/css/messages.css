@@ -54,6 +54,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: var(--primaryDark);
+    height: 100%; 
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 5s; /* Firefox < 16 */
      -ms-animation: fadein 5s; /* Internet Explorer */
@@ -161,24 +162,33 @@ form {
     grid-template: auto/auto 1fr;
 }
 
+.center_content{
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* margin-top: 50%; */
+}
+
 .submitButton {
     color: var(--primaryDark);
     background-color: var(--accent);
-    font-size: 1.3em;
+    font-size: 36px;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
-    padding: 7px;
+    padding: 15px;
 }
 
 .submitButton3 {
     color: var(--primaryDark);
     background-color: var(--accent);
-    font-size: 1.0em;
+    font-size: 24px;
     font-family:'Ubuntu', sans-serif;
     font-style: bold; 
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
-    padding: 7px;
+    padding: 10px;
 }
 
 #submitButton1{
