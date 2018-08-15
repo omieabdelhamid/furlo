@@ -403,6 +403,7 @@ form {
 }
 
 #otherDonate{
+    text-align: center;
     color: var(--primaryDark);
     background-color: var(--accent);
     font-size: 16px;
@@ -415,6 +416,8 @@ form {
     width: 325px; 
 }
 #otherDonate{
+    text-align: center;
+
     font-family:'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -441,6 +444,8 @@ form {
     outline-color: var(--primarydark);
 }
 .dressForSchool{
+    text-align: center;
+
     display: inline-block; 
     float: left; 
     width: 300px; 
@@ -449,6 +454,8 @@ form {
     font-family: "Ubuntu", cursive;  
 }
 .clothingPickup{
+    text-align: center;
+
     display: inline-block; 
     float: left;
     width: 300px; 
@@ -457,6 +464,8 @@ form {
     font-family: "Ubuntu", cursive; 
 }
 .theBlueJeans{
+    text-align: center;
+
     display: inline-block; 
     float: left;
     width: 300px; 
@@ -465,6 +474,8 @@ form {
     font-family: "Ubuntu", cursive; 
 }
 .salvationArmy{ 
+    text-align: center;
+
     display: inline-block; 
     float: left; 
     width: 300px;
@@ -474,33 +485,41 @@ form {
 }
 
 .titleDress{ 
+    text-align: center;
+
     display: inline-block; 
     float: left;
     width: 300px; 
     color: white; 
-    margin-left: 30px;
+    margin-left: 0px;
     font-family: "Ubuntu", cursive; 
     font-size: 20px;
 }
 .titleClothing{
+    text-align: center;
+
     display: inline-block; 
     float: left;
     width: 300px; 
     color: white; 
-    margin-left: 30px;
+    margin-left: 10px;
     font-family: "Ubuntu", cursive; 
     font-size: 20px;
 }
 .titleBlueJeans{
+    text-align: center;
+
     display: inline-block; 
     float: left;
     width: 300px; 
     color: white; 
-    margin-left: 30px;
+    margin-left: 0px;
     font-family: "Ubuntu", cursive; 
     font-size: 20px;
 }
 .titleSalvation{
+    text-align: center;
+
     color: white; 
     font-family: "Ubuntu", cursive; 
     font-size: 20px;
