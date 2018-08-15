@@ -32,7 +32,7 @@ giveORwant.addEventListener("change", updateDesc)
 let database = firebase.database().ref()
 function updateDesc() {
     let wantOrNeed = document.querySelector("#wantOrneed")
-    wantOrNeed.innerHTML = giveORwant.value == "lookingFor" ? "Want: &nbsp;" : "Need: &nbsp"
+    wantOrNeed.innerHTML = giveORwant.value == "lookingFor" ? "Want: &nbsp;" : "Have: &nbsp"
 } 
 /**
  * Updates the database with the username and message.
