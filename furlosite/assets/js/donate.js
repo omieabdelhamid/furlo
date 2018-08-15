@@ -98,7 +98,6 @@ show.addEventListener("click", clearDiv)
 
 function addRequestToBoard(rowDataRef){
     const row = rowDataRef.val();
-    console.log(row);
     const name = row.NAME;
     const email = row.EMAIL;
     const request = row.REQUEST;
@@ -115,5 +114,4 @@ function addRequestToBoard(rowDataRef){
 
 }
 
-console.log(database);
  
