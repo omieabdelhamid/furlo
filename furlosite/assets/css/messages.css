@@ -138,7 +138,7 @@ h1 {
 
 label {
     font-size: 1.3em;
-    color: var(--primaryDark);
+    color:var(--primaryDark);
 }
 
 input {
