@@ -6,7 +6,11 @@ function addDiv(event) {
     //event.preventDefault();
     document.querySelector("#userContainer").style.display = "block";
     document.querySelector("#submitButton").style.display = "none";
+    allRequests.style.display = "none";
+    show.style.display = "block";
+    other.style.display = "block";
  }
+
 
 
 
@@ -15,60 +19,76 @@ const emailElement = document.getElementById("email");
 const requestElement = document.getElementById("request");
 const commentElement = document.getElementById("comment");
 const button = document.getElementById("submitButton1");
+const other = document.getElementById("otherDonate");
+const otherWays = document.getElementById("otherWays");
 const show = document.getElementById("submitButton3");
 const allRequests = document.getElementById("allRequests");
-button.addEventListener("click", isAnythingEmpty);
+const giveORwant = document.getElementById("giveORwant")
 button.addEventListener("click",updateDB);
-
-
+//button.addEventListener("click", clearDiv)
+other.addEventListener("click", showOther)
+giveORwant.addEventListener("change", updateDesc)
 //Set database object here
 let database = firebase.database().ref()
-
+function updateDesc() {
+    let wantOrNeed = document.querySelector("#wantOrneed")
+    wantOrNeed.innerHTML = giveORwant.value == "lookingFor" ? "Want: &nbsp;" : "Need: &nbsp"
+} 
 /**
  * Updates the database with the username and message.
  */
+
+ function showOther(){
+    show.style.display = "none";
+
+    button.style.display = "none";
+    button1.style.display = "none";
+    other.style.display = "none";
+    otherWays.style.display="block";
+    document.querySelector("#userContainer").style.display = "none";
+
+ }
+
 function clearDiv(){
     show.style.display = "none";
+    other.style.display ="none";
     document.querySelector("#userContainer").style.display = "none";
     allRequests.style.display = "block";
     document.querySelector("#submitButton").style.display = "none";
-
+    postButton.style.display = "none";
+    seeButton.style.display = "none";
+    other.style.display = "none";
 }
 
-function isAnythingEmpty(){
-    const anyEmpty = usernameElement.value == "" ||
-    emailElement.value == "" ||
-    requestElement.value == "" 
- return anyEmpty
- }
+
 
 function updateDB(event){
-    if(isAnythingEmpty()){
+    event.preventDefault();
+    const anyEmpty = usernameElement.value == "" ||
+    emailElement.value == "" ||
+    requestElement.value == "" ;
+    
+    if(anyEmpty){
         alert("Please Fill In All Forms!")
     } else {
-    clearDiv()
-    event.preventDefault();
-    const username        = usernameElement.value;
-    const email         = emailElement.value;
-    const request         = requestElement.value;
-    const comment        = commentElement.value;
+        const username        = usernameElement.value;
+        const email         = emailElement.value;
+        const request         = requestElement.value;
+        const comment        = commentElement.value;
+        usernameElement.value = "";
+        emailElement.value  = "";
+        requestElement.value  = "";
+        commentElement.value = "";
+        //Update database here
+        const rawData ={
+            NAME: username,
+            EMAIL: email,
+            REQUEST: request,
+            COMMENT: comment
+        }
 
-
-    usernameElement.value = "";
-    emailElement.value  = "";
-    requestElement.value  = "";
-   commentElement.value = "";
-
-
-    //Update database here
-    const rawData ={
-        NAME: username,
-        EMAIL: email,
-        REQUEST: request,
-        COMMENT: comment
-    }
-
-database.push(rawData); 
+        database.push(rawData); 
+        clearDiv();
     }
 }
 
@@ -77,8 +97,7 @@ database.on("child_added",addRequestToBoard);
 show.addEventListener("click", clearDiv)
 
 function addRequestToBoard(rowDataRef){
-    
-    const row = rowDataRef.val()
+    const row = rowDataRef.val();
     console.log(row);
     const name = row.NAME;
     const email = row.EMAIL;
@@ -86,8 +105,9 @@ function addRequestToBoard(rowDataRef){
     const comment = row.COMMENT;
     const div = document.createElement("div");
     div.className= "requestDiv"
-    const paragraph = document.createElement("p");
-    paragraph.innerHTML = "Name: &nbsp;" + name  + "<br>" + "<br>" + request + " needed" + "<br>" + "Email: &nbsp" + email + "<br>" + comment ;
+    const paragraph = document.createElement("p"); 
+    let option = giveORwant.value == "lookingFor" ? " needed" : " to give"
+    paragraph.innerHTML = "Name: &nbsp;" + name  + "<br>" + "<br>" + request + option + "<br>" + "Email: &nbsp" + email + "<br>" + comment ;
     div.appendChild(paragraph);
     allRequests.appendChild(div);
     

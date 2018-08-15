@@ -8,7 +8,7 @@
 :root {
     --primaryDark: black;
     --primaryLight: #EDEBD7;
-    --accent: pink;
+    --accent: rgb(252, 165, 179);
     --alternate: #593F62;
     --addedPadding: 10px;
 }
@@ -33,7 +33,9 @@ p {
          animation: fadein 5s;
 }
 
-
+.linky{
+color:white;
+}
 
 .mdl-layout-title {
     font-size: 36px;
@@ -47,13 +49,20 @@ p {
       -o-animation: fadein 5s; /* Opera < 12.1 */
          animation: fadein 5s;
 } 
-
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: linear-gradient(transparent, black);
+   text-align: center;
+}
 body {
+    background: linear-gradient(black, rgb(102, 64, 70)) no-repeat center center fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: var(--primaryDark);
     height: 100%; 
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 5s; /* Firefox < 16 */
@@ -87,15 +96,21 @@ h1 {
     margin: 20px 0 40px 0;
     display: flex;
     padding: 15px;
-    border: 2px solid var(--accent);
+    font-family: 'Ubuntu', sans-serif;
+    border: 3px solid var(--accent);
     color: white;
     background-color: black;
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
 }
 
 .allMessages {
     flex: 1;
     margin-top: 15px;
-    width: calc(60% + var(--addedPadding)*2);
+    width: calc(40% + var(--addedPadding)*2);
     padding: var(--addedPadding);
     border: 2px solid var(--accent);
     background-color: var(--primaryLight);
@@ -114,9 +129,9 @@ h1 {
 }
 
 .userContainer {
-    margin: 20px 0 40px 0;
-    width: 60%;
-    border: 2px solid var(--accent);
+    margin: -10px 0 40px 0;
+    width: 50%;
+    border: 7px solid var(--accent);
     background-color: var(--primaryLight);
 }
 
@@ -127,13 +142,15 @@ label {
 }
 
 input {
-    font-size: 1.3em;
+    color: var(--alternate);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;;
     background: none;
     border: unset;
     border-bottom: var(--alternate) 2px solid;
-    caret-color: var(--accent);
-    color: var(--alternate);
+    width: 95%;
 }
+
 
 input:focus {
     outline: none;
@@ -148,6 +165,7 @@ form,
 .singleInput {
     display: grid;
     grid-gap: var(--addedPadding);
+    
 }
 
 form {
@@ -156,12 +174,44 @@ form {
 
 .inputContainer {
     grid-template: auto auto/auto;
-}
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: -6px;
 
+}
+.buttons{
+    margin-bottom: -10px;
+}
 .singleInput {
     grid-template: auto/auto 1fr;
 }
+#giveORwant{
+    margin-left: 20px;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    padding: 4px;
+    background-color:rgba(0, 0, 0, 0.05);
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    border: unset;
+    font-weight: bold;
 
+
+}
+
+#request{
+    font-size: 16px;
+    width: 85%;
+    background-color:transparent;
+    color: var(--alternate);
+    font-family: Arial, Helvetica, sans-serif;
+    border: unset;
+    border-bottom: var(--alternate) 2px solid;
+
+
+}
 .center_content{
     display: flex;
     height:100vh;
@@ -174,31 +224,92 @@ form {
 .submitButton {
     color: var(--primaryDark);
     background-color: var(--accent);
-    font-size: 36px;
+    font-size: 16px;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
-    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.submitButton4 {
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 16px;
+    font-family:'Ubuntu', sans-serif;
+    font-style: bold; 
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 50%;
+
 }
 
 .submitButton3 {
     color: var(--primaryDark);
     background-color: var(--accent);
-    font-size: 24px;
+    font-size: 16px;
     font-family:'Ubuntu', sans-serif;
     font-style: bold; 
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
-    padding: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+}
+
+#postButton {
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 16px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-style: bold; 
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 0px;
+
+
+}
+
+#seeButton {
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 16px;
+    font-family:'Ubuntu', sans-serif;
+    font-style: bold; 
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
 }
 
 #submitButton1{
     font-family:'Ubuntu', sans-serif;
-    font-style: bold;
+    font-weight: bold;
+    font-size: 16px;
+    outline: 30px;
+    outline-color: black;
 }
 
 #submitButton1:hover {
     background-color: var(--primaryDark);
     color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #submitButton1:focus {
@@ -207,10 +318,36 @@ form {
     outline-color: var(--primarydark);
 }
 
+#postButton:hover {
+    background-color: var(--primaryDark);
+    color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#postButton:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
+}
+
+#seeButton:hover {
+    background-color: var(--primaryDark);
+    color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#seeButton:focus {
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
+}
+
+
 
 #submitButton3:hover {
     background-color: var(--primaryDark);
     color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #submitButton3:focus {
@@ -222,6 +359,7 @@ form {
 #submitButton:hover {
     background-color: var(--primaryDark);
     color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #submitButton:focus {
@@ -262,4 +400,108 @@ form {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+#otherDonate{
+    color: var(--primaryDark);
+    background-color: var(--accent);
+    font-size: 16px;
+    transition: color 300ms ease-in, background-color 300ms ease-in;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 325px; 
+}
+#otherDonate{
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    outline: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300%;
+    height: 35px;
+    padding-left:64px;
+    padding-right:72px;
+    align-content: center;
+    outline-color: black;
+    margin-left: 3px;
+
+}
+#otherDonate:hover{
+    background-color: var(--primaryDark);
+    color: var(--accent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} 
+#otherDonate:focus{
+    outline-style: none;
+    outline-width: 2px;
+    outline-color: var(--primarydark);
+}
+.dressForSchool{
+    display: inline-block; 
+    float: left; 
+    width: 300px; 
+    color: white; 
+    font-size: 18px;
+    font-family: "Ubuntu", cursive;  
+}
+.clothingPickup{
+    display: inline-block; 
+    float: left;
+    width: 300px; 
+    color: white; 
+    margin-left: 0px; 
+    font-family: "Ubuntu", cursive; 
+}
+.theBlueJeans{
+    display: inline-block; 
+    float: left;
+    width: 300px; 
+    color: white; 
+    margin-left: 10px;
+    font-family: "Ubuntu", cursive; 
+}
+.salvationArmy{ 
+    display: inline-block; 
+    float: left; 
+    width: 300px;
+    color: white; 
+    margin-left: 10px;
+    font-family: "Ubuntu", cursive; 
+}
+
+.titleDress{ 
+    display: inline-block; 
+    float: left;
+    width: 300px; 
+    color: white; 
+    margin-left: 30px;
+    font-family: "Ubuntu", cursive; 
+    font-size: 20px;
+}
+.titleClothing{
+    display: inline-block; 
+    float: left;
+    width: 300px; 
+    color: white; 
+    margin-left: 30px;
+    font-family: "Ubuntu", cursive; 
+    font-size: 20px;
+}
+.titleBlueJeans{
+    display: inline-block; 
+    float: left;
+    width: 300px; 
+    color: white; 
+    margin-left: 30px;
+    font-family: "Ubuntu", cursive; 
+    font-size: 20px;
+}
+.titleSalvation{
+    color: white; 
+    font-family: "Ubuntu", cursive; 
+    font-size: 20px;
 }
