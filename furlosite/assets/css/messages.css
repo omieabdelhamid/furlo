@@ -19,6 +19,9 @@ h1,
 p {
     margin: 0;
 }
+
+/* Site Title Style */
+
 .mdl-navigation__link1, .mdl-navigation__link2, .mdl-navigation__link3, .mdl-navigation__link4{
     font-size: 23px;
     font-family: 'Monoton', cursive;
@@ -33,9 +36,13 @@ p {
          animation: fadein 5s;
 }
 
+/* Color of Other Ways Page Subtitles */
+
 .linky{
 color:white;
 }
+
+/* Site Title Style */
 
 .mdl-layout-title {
     font-size: 36px;
@@ -49,6 +56,9 @@ color:white;
       -o-animation: fadein 5s; /* Opera < 12.1 */
          animation: fadein 5s;
 } 
+
+/* Footer */
+
 footer{
    position: fixed;
    left: 0;
@@ -57,6 +67,10 @@ footer{
    background: linear-gradient(transparent, black);
    text-align: center;
 }
+
+/* Set Background Color and BASIC structure */
+
+
 body {
     background: linear-gradient(black, rgb(102, 64, 70)) no-repeat center center fixed;
     display: flex;
@@ -417,7 +431,7 @@ form {
 }
 #otherDonate{
     text-align: center;
-
+    border-radius: 5%;
     font-family:'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -448,7 +462,7 @@ form {
 
     display: inline-block; 
     float: left; 
-    width: 300px; 
+    width: 305px; 
     color: white; 
     font-size: 18px;
     font-family: "Ubuntu", cursive;  
